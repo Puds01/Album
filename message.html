@@ -10,9 +10,19 @@
       background-color: black;
     }
 
+    .spotify {
+        width: 20%; 
+        margin-left: 40%;
+    }
+
     @media (max-device-width: 425px) {
       .card {
         margin-bottom: 50px;
+      }
+      .spotify {
+        width: 100%;
+        margin: 0;
+        margin-bottom: 5%;
       }
     }
 
@@ -49,7 +59,7 @@
 <body>
 
   <!-- Spotify -->
-  <div style="position: fixed; width: 100%; z-index: 1; bottom: 0; margin: 0; padding: 0;">
+  <div class="spotify">
     <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/0sqnYgWOw9DMc6jRgkcB2m?utm_source=generator" width="100%" height="100" frameBorder="0" allowfullscreen allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
   </div>
 
@@ -60,87 +70,98 @@
       <div id="cardCarousel" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
 
-          <!-- Slide 1 -->
-          <div class="carousel-item active">
-            <div class="row justify-content-center">
-              <!-- Card 1 -->
-              <div class="col-12 col-md-4">
-                <div class="card shadow-sm">
-                  <img class="card-img-top" src="images/January.jfif" alt="January">
-                  <div class="card-body">
-                    <h3 class="card-title text-center">January</h3>
-                    <p class="card-text">A new start not only for 2025, but also for us, as a couple. First kiss and first... 😉</p>
-                    <div class="d-flex justify-content-between align-items-center">
-                      <small class="text-body-secondary">4:35 pm</small>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <!-- Card 2 -->
-              <div class="col-12 col-md-4">
-                <div class="card shadow-sm">
-                  <img class="card-img-top" src="images/Febuary.jpg" alt="February">
-                  <div class="card-body">
-                    <h3 class="card-title text-center">February</h3>
-                    <p class="card-text">Start of OJT! Moreour flaws and more away. But strengthened our understanding and forgiveness. 😌</p>
-                    <div class="d-flex justify-content-between">
-                      <small class="text-body-secondary">Febuary 14 | 12:01 pm</small>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <!-- Card 3 -->
-              <div class="col-12 col-md-4">
-                <div class="card shadow-sm">
-                  <img class="card-img-top" src="images/March.jfif" alt="March">
-                  <div class="card-body">
-                    <h3 class="card-title text-center">March</h3>
-                    <p class="card-text">Alot of challenges and unfortunes happened but took advantage for the best of it. 💪</p>
-                    <div class="d-flex justify-content-between">
-                      <small class="text-body-secondary">3:28 pm</small>
+            <!-- January -->
+            <div class="carousel-item active">
+              <div class="row justify-content-center">
+                <div class="col-12 col-md-4">
+                  <div class="card shadow-sm">
+                    <img class="card-img-top" src="images/January.jfif" alt="January">
+                    <div class="card-body">
+                      <h3 class="card-title text-center">January</h3>
+                      <p class="card-text">A new start not only for 2025, but also for us, as a couple. First kiss and first... 😉</p>
+                      <div class="d-flex justify-content-between align-items-center">
+                        <small class="text-body-secondary">4:35 pm</small>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
-
-          <!-- Slide 2 -->
-          <div class="carousel-item">
-            <div class="row justify-content-center">
-              <!-- Card 4 -->
-              <div class="col-12 col-md-4">
-                <div class="card shadow-sm">
-                  <img class="card-img-top" src="images/April.jfif" alt="April">
-                  <div class="card-body">
-                    <h3 class="card-title text-center">April</h3>
-                    <p class="card-text">Always rely on each other. Make ourselves feel useful. Instead of others. 🙏</p>
-                    <div class="d-flex justify-content-between">
-                      <small class="text-body-secondary">5:07 pm</small>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <!-- Card 5 -->
-              <div class="col-12 col-md-4">
-                <div class="card shadow-sm">
-                  <img class="card-img-top" src="images/Recent.jfif" alt="Recent">
-                  <div class="card-body">
-                    <h3 class="card-title text-center">Recent</h3>
-                    <p class="card-text">Our journey continues... still strong, still in love, and looking forward to more memories. 💖</p>
-                    <div class="d-flex justify-content-between">
-                      <small class="text-body-secondary">4:05 pm</small>
+          
+            <!-- February -->
+            <div class="carousel-item">
+              <div class="row justify-content-center">
+                <div class="col-12 col-md-4">
+                  <div class="card shadow-sm">
+                    <img class="card-img-top" src="images/Febuary.jpg" alt="February">
+                    <div class="card-body">
+                      <h3 class="card-title text-center">February</h3>
+                      <p class="card-text">Start of OJT! More our flaws and more away. But strengthened our understanding and forgiveness. 😌</p>
+                      <div class="d-flex justify-content-between">
+                        <small class="text-body-secondary">February 14 | 12:01 pm</small>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
+          
+            <!-- March -->
+            <div class="carousel-item">
+              <div class="row justify-content-center">
+                <div class="col-12 col-md-4">
+                  <div class="card shadow-sm">
+                    <img class="card-img-top" src="images/March.jfif" alt="March">
+                    <div class="card-body">
+                      <h3 class="card-title text-center">March</h3>
+                      <p class="card-text">A lot of challenges and unfortunes happened but took advantage for the best of it. 💪</p>
+                      <div class="d-flex justify-content-between">
+                        <small class="text-body-secondary">3:28 pm</small>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          
+            <!-- April -->
+            <div class="carousel-item">
+              <div class="row justify-content-center">
+                <div class="col-12 col-md-4">
+                  <div class="card shadow-sm">
+                    <img class="card-img-top" src="images/April.jfif" alt="April">
+                    <div class="card-body">
+                      <h3 class="card-title text-center">April</h3>
+                      <p class="card-text">Always rely on each other. Make ourselves feel useful. Instead of others. 🙏</p>
+                      <div class="d-flex justify-content-between">
+                        <small class="text-body-secondary">5:07 pm</small>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          
+            <!-- Recent -->
+            <div class="carousel-item">
+              <div class="row justify-content-center">
+                <div class="col-12 col-md-4">
+                  <div class="card shadow-sm">
+                    <img class="card-img-top" src="images/Recent.jfif" alt="Recent">
+                    <div class="card-body">
+                      <h3 class="card-title text-center">Recent</h3>
+                      <p class="card-text">Our journey continues... still strong, still in love, and looking forward to more memories. 💖</p>
+                      <div class="d-flex justify-content-between">
+                        <small class="text-body-secondary">4:05 pm</small>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          
           </div>
-
-        </div>
+          
 
         <!-- Carousel Controls -->
         <button class="carousel-control-prev" type="button" data-bs-target="#cardCarousel" data-bs-slide="prev">
